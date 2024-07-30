@@ -36,8 +36,8 @@ public class PatientController {
         return service.updatePatient(patient);
     }
 
-    @DeleteMapping("delete_patient")
-    void deletePatient(@PathVariable String medCard){
+    @DeleteMapping("delete_patient/{medCard}")
+    public void deletePatient(@PathVariable String medCard){
         service.deletePatient(medCard);
     }
 
