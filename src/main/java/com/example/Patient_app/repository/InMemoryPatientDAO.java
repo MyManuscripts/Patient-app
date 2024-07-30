@@ -1,11 +1,13 @@
 package com.example.Patient_app.repository;
 
 import com.example.Patient_app.model.Patient;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
+@Repository
 public class InMemoryPatientDAO {
     private final List<Patient>bufferListPatients = new ArrayList<>();
 

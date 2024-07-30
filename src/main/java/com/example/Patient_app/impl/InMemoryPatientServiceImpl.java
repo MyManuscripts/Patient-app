@@ -32,8 +32,8 @@ public class InMemoryPatientServiceImpl implements PatientService {
         return repository.updatePatient(patient);
     }
 
-    @Override
 
+    @Override
     public void deletePatient(String medCard) {
         repository.deletePatient(medCard);
     }
